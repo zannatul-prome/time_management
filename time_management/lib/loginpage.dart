@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
                   children: [
                     // Title
                     const Text(
-                      'Sign Up',
+                      'Sign In',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 24,
@@ -72,24 +72,12 @@ class MyApp extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const SizedBox(height: 16),
-
-                    // Confirm Password TextField
-                    TextField(
-                      obscureText: true,
-                      decoration: InputDecoration(
-                        hintText: 'Confirm Password',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                      ),
-                    ),
                     const SizedBox(height: 24),
 
-                    // Sign Up button
+                    // Sign In button
                     ElevatedButton(
                       onPressed: () {
-                        print('Sign Up pressed');
+                        print('Sign In pressed');
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blue,
@@ -99,26 +87,26 @@ class MyApp extends StatelessWidget {
                         ),
                       ),
                       child: const Text(
-                        'Sign Up',
+                        'Sign In',
                         style: TextStyle(fontSize: 18, color: Colors.white),
                       ),
                     ),
                     const SizedBox(height: 16),
 
-                    // Sign In link
+                    // Sign Up link
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const Text(
-                          'Already have an account? ',
+                          'Don\'t have an account? ',
                           style: TextStyle(color: Colors.grey),
                         ),
                         GestureDetector(
                           onTap: () {
-                            print('Sign In pressed');
+                            print('Sign Up pressed');
                           },
                           child: const Text(
-                            'Sign In',
+                            'Sign Up',
                             style: TextStyle(
                               color: Colors.blue,
                               fontWeight: FontWeight.bold,
